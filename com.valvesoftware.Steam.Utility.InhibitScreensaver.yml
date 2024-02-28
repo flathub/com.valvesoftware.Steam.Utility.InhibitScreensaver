@@ -28,8 +28,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: archive
-        url: https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v1.4.0.tar.gz
-        sha256: ca7405c7f0f9ae3023dcfa37bc68974c4b8a1c9ea2909b970e0aedc3e8657ee6
+        url: https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v1.5.0.tar.gz
+        sha256: 577986929f911320fb9ef6a3e2badd464dc38411ebc25d2966f5cb85c39f0897
         x-checker-data:
           type: anitya
           project-id: 70626
@@ -46,13 +46,14 @@ modules:
         commit: 77b75b8bc0d04c6927013c80de2ca2e18d24e86b
         x-checker-data:
           type: git
-          tag-pattern: "^v([\\d.]+)$"
+          tag-pattern: ^v([\d.]+)$
 
   - name: metadata
     buildsystem: simple
     build-commands:
       - install -Dm644 -t ${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
-      - appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak ${FLATPAK_ID}
+      - appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak
+        ${FLATPAK_ID}
     sources:
       - type: file
         path: com.valvesoftware.Steam.Utility.InhibitScreensaver.metainfo.xml
