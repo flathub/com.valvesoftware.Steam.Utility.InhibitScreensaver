@@ -28,8 +28,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: archive
-        url: https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v2.0.0.tar.gz
-        sha256: 88af4569161a0d0192f0f4a94582a1af4e75722499d06984fb7f91f638f5afb3
+        url: https://github.com/Kistler-Group/sdbus-cpp/archive/refs/tags/v2.1.0.tar.gz
+        sha256: 6025e5dc6cddd532ff960d14e68ced5f42a1916b23a73fea6bcb437f06992eaf
         x-checker-data:
           type: anitya
           project-id: 70626
