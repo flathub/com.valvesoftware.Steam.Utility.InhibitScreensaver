@@ -5,10 +5,10 @@
   <extends>com.valvesoftware.Steam</extends>
   <name>InhibitScreensaver</name>
   <developer_name>trilader</developer_name>
-  <summary>A small utility to run your applications and games with to enable screensave blocking from within Flatpak (on Wayland)</summary>
+  <summary>A small utility to run your applications and games with to enable screensaver blocking from within Flatpak (on Wayland)</summary>
   <description>
-    <p>A small utility to run your applications and games with to enable screensave blocking from within Flatpak (on Wayland).</p>
-    <p>To use just put <pre>inhibit-screensaver %command%</pre> in your game/application launch command after installing this and restarting Steam if it was running during the installation.</p>
+    <p>A small utility to run your applications and games with to enable screensaver blocking from within Flatpak (on Wayland).</p>
+    <p>To use just put <code>inhibit-screensaver %command%</code> in your game/application launch command after installing this and restarting Steam if it was running during the installation.</p>
   </description>
   <categories>
     <category>Game</category>
